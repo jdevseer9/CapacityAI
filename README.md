@@ -8,7 +8,7 @@ IDE agentique — IDE + Designer + Agent IA — sans Electron, sans wrapper web.
 > Développé intégralement par **Juste Elysée MALANDILA** — Brazzaville, Congo.
 > 📫 malandilajusteelysee@gmail.com · linkedin.com/in/justelm · yusticanum.com
 
-![Capacity IDE](screenshots/wide.png)
+![Capacity AI — IDE](screenshots/ide_live.png)
 
 ---
 
@@ -52,9 +52,14 @@ backend Python agentique — deux processus, responsabilités nettes.
 - **Palette de commandes** Ctrl+P, centre de commande : `@fichier`,
   `>commande`, texte libre → agent
 - Layout animé — panneaux explorateur / agent / terminal repliables
-- Thème Monokai, composants Qt Quick sur mesure (~46 fichiers QML)
-- Zone **Designer** intégrée
-- Page de lancement / login, aperçu, settings
+- Thème Monokai, composants Qt Quick sur mesure
+- **Sélecteur d'espace de travail** au lancement : **IDE Agentique**
+  (code + agents + terminal), **Designer Studio** (canvas glisser-déposer,
+  palette de composants, inspecteur de propriétés, export HTML vivant) et
+  **Flow Zone** (orchestration de workflows — en développement)
+- Onglets **Éditeur / Fusion / Agent / Design**, menus complets
+  (Fichier, Édition, Sélection, Affichage, Exécuter, Agent, Terminal, Aide)
+- Panneau agent **JusteAI** connecté en barre latérale, Projets récents
 
 ### 🏗 Architecture
 
@@ -72,13 +77,11 @@ backend/agent_backend.py (boucle outils, permissions, MCP, sessions)
 | Build | CMake · MSVC · windeployqt (le backend Python est copié au post-build) |
 | Config | `~/.capacityai/config.json` — partagée avec la version PyQt6 sœur |
 
-![L'agent compile, relance et vérifie lui-même](screenshots/design_test.png)
-
 ## 📸 Galerie
 
-| Chat agent en action | Cartes de tâches animées | Layout complet |
-|---|---|---|
-| ![Chat](screenshots/chatlive.png) | ![Cartes](screenshots/cards1.png) | ![Layout](screenshots/final.png) |
+| Sélecteur d'espace de travail | IDE — Éditeur · Fusion · Agent · Design |
+|---|---|
+| ![Espaces](screenshots/workspace.png) | ![IDE](screenshots/ide_live.png) |
 
 ## 📥 Démo
 
